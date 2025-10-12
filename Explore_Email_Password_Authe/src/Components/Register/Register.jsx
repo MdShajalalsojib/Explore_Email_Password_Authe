@@ -1,4 +1,6 @@
 import React from 'react';
+import { auth } from '../../firebase.init';
+import { createUserWithEmailAndPassword } from 'firebase/auth';
 
  
 
@@ -9,7 +11,21 @@ const Register = () => {
         const email = e.target.email.value;
         const password = e.target.password.value;
         console.log(email,password);
+
+        //create user
+
+        createUserWithEmailAndPassword (auth, email, password)
+        .then(result =>{
+          console.log(result)
+        })
+        .catch(error => {
+          console.log(error)
+        })
     }
+
+
+      
+
     return (
         <div>
              <div className='bg-gray-600 rounded-2xl  w-2xl text-center mt-10 ml-[400px] '>
@@ -65,7 +81,8 @@ const Register = () => {
                     Must be more than 8 characters, including
                     <br />At least one number <br />At least one lowercase letter <br />At least one uppercase letter
                   </p>
-                  <br></br>
+                  <br/>
+
                     {/**Sumd filed */}
                     <input className='btn btn-primary mt-5 w-[322px] mb-5' type="submit" value="Submit"/> 
                      
