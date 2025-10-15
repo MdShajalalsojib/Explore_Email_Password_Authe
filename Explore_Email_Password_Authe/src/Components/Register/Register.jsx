@@ -84,9 +84,7 @@ const Register = () => {
                   <br />
 
                     {/**Sumd filed */}
-                    <input className='btn btn-primary mt-5 w-[322px] mb-5' type="submit" value="Submit" /> 
-                     
-                   
+                    <button className='btn btn-primary mt-5 w-[322px] mb-5' type="submit" value="Submit">Submit</button>  
               </font>
              </div>
         </div>
