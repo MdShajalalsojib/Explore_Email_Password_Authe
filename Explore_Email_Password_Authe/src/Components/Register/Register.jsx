@@ -29,8 +29,8 @@ const Register = () => {
     return (
         <div>
              <div className='bg-gray-600 rounded-2xl  w-2xl text-center mt-10 ml-[400px] '>
-             <h1 className='text-2xl font-bold text-center'>Register pless </h1>
-              <font onSubmit ={handleRegister}>
+             <h1 className='text-2xl font-bold text-center'>Pless Register </h1>
+              <font onSubmit={handleRegister}>
                    {/**Gamil filed */}
                     
                     <div className='mt-5 mb-5'>
@@ -47,7 +47,7 @@ const Register = () => {
                             <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
                           </g>
                         </svg>
-                        <input type="email" name='email' placeholder="mail@site.com" required />
+                        <input type="email" name="email" placeholder="mail@site.com" required />
                       </label>
                       <div className="validator-hint hidden">Enter valid email address</div>
                     </div>
@@ -69,7 +69,7 @@ const Register = () => {
                     </svg>
                     <input
                       type="password"
-                      name='password'
+                      name="password"
                       required
                       placeholder="Password"
                       minLength="8"
@@ -81,10 +81,10 @@ const Register = () => {
                     Must be more than 8 characters, including
                     <br />At least one number <br />At least one lowercase letter <br />At least one uppercase letter
                   </p>
-                  <br/>
+                  <br />
 
                     {/**Sumd filed */}
-                    <input className='btn btn-primary mt-5 w-[322px] mb-5' type="submit" value="Submit"/> 
+                    <input className='btn btn-primary mt-5 w-[322px] mb-5' type="submit" value="Submit" /> 
                      
                    
               </font>
