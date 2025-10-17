@@ -51,7 +51,7 @@ const SinUp = () => {
 
   return (
     <div>
-            <div className="card bg-gray-500 mx-auto mt-10 w-full max-w-sm shrink-0 shadow-2xl">
+            <div className="card bg-gray-500 mx-auto mt-10 w-full max-w-sm shrink-0 shadow-2xl shadow-blue-300">
                  <h1 className="text-3xl font-bold p-5 text-center">SinUp</h1>
               <div className="card-body">
                 <form onSubmit={handleSignUp}>
